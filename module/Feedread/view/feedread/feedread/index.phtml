@@ -1,0 +1,11 @@
+<h1>Vagas DF</h1>
+
+<?php 
+
+echo '<ul>';
+	foreach ($this->feeds as $feed):		
+		echo ($feed -> title) ? '<li>' . '<h2>Titulo</h2> ' . $feed -> title . '<h3>Conteúdo</h3> ' . $feed -> content . '</li>' : '';
+	endforeach;
+echo '</ul>';
+
+?>
